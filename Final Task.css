@@ -1,0 +1,544 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color:#A1CCD1;
+    min-height: 100vh;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 15px 5rem;
+    text-align: center;
+    background-color: white;
+    box-shadow: 1px 2px 3px black;
+    border-radius:0px 0px 5px 5px;
+}
+.header h2{
+    color: blue;
+    font-family: sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 1s;
+    padding: 5px;
+}
+.header h2:hover{
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.scroll{
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    text-align: center;
+}
+.scroll p{
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: 1s;
+    padding: 3px;
+}
+.submenu p{
+    padding: 5px 20px;
+}
+.header p:hover{
+    background-color: black;
+    padding: 4px;
+    color: white;
+    border-radius: 5px;
+}
+.header label{
+    display: none;
+}
+.header span:hover{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+.headerA{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+.headerA > div{
+    display: flex;
+    gap: 4rem;
+}
+.headerA p{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 4px 10px;
+    color: black;
+    cursor: pointer;
+    transition: 1s;
+    display: block;
+}
+.header a{
+    text-decoration: none;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: 1s;
+}
+.header a:hover{
+    background-color: black;
+    color: white;
+}
+.headerA p:hover{
+    background-color: black;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 5px;
+}
+.headerA p:last-child{
+    color: blue;
+}
+.headerA p:last-child:hover{
+    background-color: blue;
+    color: white;
+}
+.img img{
+    width: 100%;
+    background-size: contain;
+    object-fit: contain;
+}
+input{
+    display: none;
+}
+.subHeaderDiv{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.subheader{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: blue;
+    padding: 20px 40px;
+    box-shadow: 1px 2px 3px black;
+}
+.subheader p{
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: 1s;
+}
+.subheader p:hover{
+    background-color: white;
+    color: blue;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+.subheader i{
+    padding: 0px 20px;
+}
+.subheaderA{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 12px 30px;
+    box-shadow: 1px 1px 2px black;
+    border-radius:0px 0px 5px 5px;
+}
+.subheaderA p{
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 8px 10px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: 1s;
+}
+.subheaderA p:hover{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.subheaderA i{
+    padding: 0px 20px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    gap: 3rem;
+    padding: 15px 1rem;
+    text-align: center;
+    background-color: white;
+    box-shadow: 1px 2px 3px black;
+}
+.cardA{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.cardA h1{
+    font-family: sans-serif;
+    color: blue;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline;
+    background-color: #D8D8D8;
+    padding: 5px 0px;
+    border-radius: 4px;
+    box-shadow: 1px 2px 3px black;
+    cursor: pointer;
+    transition: 800ms;
+}
+.cardA p{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: black;
+}
+.video{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.color{
+    height: 100vh;
+    width: 100%;
+    margin-top: 2rem;
+    position: relative;
+    background-color: black;
+}
+.color video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.color h2{
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    border-radius: 4px;
+    font-family: 'Poppins';
+    /* font-family: 'Tilt Prism', cursive; */
+    font-weight: bolder;
+    position: absolute;
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+.cardA h1:hover{
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+}
+.slideshow{
+    overflow: hidden;
+    height: 520px;
+    width: 900px;
+    box-shadow: 1px 2px 3px black;
+    flex-wrap: wrap;
+}
+.slide img{
+    float: left;
+    height: 520px;
+    width: 900px;
+}
+.slide-wrapped{
+    width: calc(900px * 6);
+    box-shadow: 1px 2px 3px black;
+    animation: slide 10s ease infinite;
+}
+.video h1{
+    font-family: sans-serif;
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    border-radius: 4px;
+    font-weight: bold;
+    flex-wrap: wrap;
+    padding: 5px 10px;
+    box-shadow: 2px 3px 4px black;
+    cursor: pointer;
+    transition: 800ms;
+}
+.video h1:hover{
+    background-color: white;
+    color: blue;
+    border-radius: 4px;
+    box-shadow: 2px 3px 4px black;
+}
+.video p{
+    font-size: 18px;
+    padding-top: 3rem;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: black;
+}
+.cardB{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cardB h1{
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    display: inline;
+    background-color: blue;
+    border-radius: 4px;
+    padding: 5px 10px;
+    box-shadow:0px 2px 3px black;
+    cursor: pointer;
+    transition: 800ms;
+}
+.cardB h1:hover{
+    background-color: white;
+    color: blue;
+    box-shadow: 0px 2px 3px black;
+}
+.cardB p{
+    font-size: 13px;
+    padding: 0px 0px;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: black;
+}
+.engine{
+    height: 400px;
+    width: 900px;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 1px 2px 3px black;
+    flex-wrap: wrap;
+    position: relative;
+}
+.engineA img{
+    height: 520px;
+    width: 900px;
+    border-radius: 4px;
+}
+.endcard{
+    flex-wrap: wrap;
+}
+.formA{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+input{
+    background-color:  #A1CCD1;
+    color:black;
+    padding: 20px 80px;
+    border: none;
+    border-radius: 2px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 400px;
+    background-color: #A1CCD1;
+}
+.card h1{
+    font-family: sans-serif;
+    font-size: 30px;
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.card p{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+}
+.card i{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 2px solid white;
+}
+.card h3{
+    font-family: sans-serif;
+    font-size: 30px;
+    color: black;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+.cardC > i{
+    background-color: blue;
+}
+.card button{
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    margin-top: 13px;
+}
+.cardC a{
+    color: white;
+    font-family: sans-serif;
+    padding-right: 20px;
+}
+.cardC h2{
+    color: white;
+    font-family: sans-serif;
+    padding-left: 20px;
+}
+.footetrA{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.box a{
+    font-family: sans-serif;
+}
+.box a{
+    margin-top: 10px;
+    padding: 20px;
+}
+@keyframes slide{
+    10%{
+        margin-left: 0%;
+    }
+    30%{
+        margin-left: calc(-900px * 1);
+    }
+    45%{
+        margin-left: calc(-900px * 2);
+    }
+    55%{
+        margin-left: calc(-900px * 3);
+    }
+    70%{
+        margin-left: calc(-900px * 4);
+    }
+    90%{
+        margin-left: calc(-900px *5);
+    }
+}
+@media screen and (min-width:320px) and (max-width:1200px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 55px;
+    }
+    .header p{
+        font-size: 13px;
+    }
+    .subheader p{
+        font-size: 14px;
+    }
+    .cardA h1{
+        padding: 10px 80px;
+        font-size: 18px;
+    }
+    .scroll{
+        position: absolute;
+        left:0;
+        width: 100%;
+        top: 58px;
+        background-color: black;
+        box-shadow: 1px 2px 3px white;
+        opacity: 0.6;
+        flex-direction: column;
+        justify-content: start;
+        padding-top: 30px;
+        transition: 1s;
+    }
+    input:checked ~.scroll{
+        top: -1000px;
+    }
+    .scroll a{
+        color: white;
+    }
+    .scroll p{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 10px 0px;
+    }
+    .subHeaderDiv{
+        position: unset;
+    }
+    .header label{
+        display: block;
+        font-size: 15px;
+        font-family: sans-serif;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .headerA p{
+        display: none;
+    } 
+    .headerA p:last-child{
+        display: block;
+    }
+    .img img{
+        width: 100%;
+    }
+    .subheader {
+        flex-wrap: wrap;
+    }
+    .subheaderA{
+        flex-wrap: wrap;
+    }
+    .subheaderA p:nth-child(5){
+        display: none;
+    }
+    .subheaderA p:nth-child(6){
+        display: none;
+    }
+    .subheaderA p:nth-child(7){
+        display: none;
+    }
+    .subheaderA p:nth-child(8){
+        display: none;
+    }
+    .subheaderA p:nth-child(9){
+        display: none;
+    }
+    .subheaderA p:nth-child(10){
+        display: none;
+    }
+    .card{
+        display: none;
+    }
+    .cardC{
+        display: block;
+        text-align: center;
+    }
+    .cardC button{
+        
+    }
+}
