@@ -300,6 +300,8 @@ input{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100vw;
+    padding: 15px 1rem;
 }
 .cardB h1{
     font-family: sans-serif;
@@ -322,13 +324,12 @@ input{
 }
 .cardB p{
     font-size: 13px;
-    padding: 0px 0px;
-    letter-spacing: 2px;
+    padding: 10px 0px;
     font-family: sans-serif;
     font-weight: lighter;
     color: black;
 }
-.engine{
+/* .engine{
     height: 400px;
     width: 900px;
     overflow: hidden;
@@ -341,7 +342,7 @@ input{
     height: 520px;
     width: 900px;
     border-radius: 4px;
-}
+} */
 .endcard{
     flex-wrap: wrap;
 }
